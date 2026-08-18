@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "formed=false": { "model": "mdstar:block/geothermal_drill" },
+    "formed=true":  { "model": "mdstar:block/geothermal_drill_on" }
+  }
+}

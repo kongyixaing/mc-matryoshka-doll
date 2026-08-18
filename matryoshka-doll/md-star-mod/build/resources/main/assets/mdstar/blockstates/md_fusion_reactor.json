@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "formed=false": { "model": "mdstar:block/md_fusion_reactor" },
+    "formed=true":  { "model": "mdstar:block/md_fusion_reactor_on" }
+  }
+}

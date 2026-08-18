@@ -1,0 +1,67 @@
+modLoader = "javafml"
+loaderVersion = "[47,)"
+license = "MIT"
+
+[[mods]]
+modId = "mdstar"
+version = "0.1.0-alpha"
+displayName = "MD Star"
+authors = "MD"
+description = '''
+Matryoshka Doll æ´ååæ¯ä¸ mod - ç°ä»£å¤§åæºæ¢°å¤æ¹åç»æï¼ç¨äºåæ MD ä¹æã
+
+MD 之星 (Matryoshka Doll Star) — Matryoshka Doll 整合包毕业 mod。
+包含多个现代大型机械的多方块结构（MD 组装塔、聚变反应堆、超导线圈矩阵、量子纠缠腔、
+反物质催化炉、戴森球核心、地热开采站等），用于合成最终毕业物 MD 之星。
+
+依赖：Forge 1.20.1, Create, GregTech CEu Modern, Applied Energistics 2
+'''
+
+[[dependencies.mdstar]]
+modId = "forge"
+mandatory = true
+versionRange = "[47,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.mdstar]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.20.1,1.21)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.mdstar]]
+modId = "create"
+mandatory = false
+versionRange = "[0.5.1,)"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies.mdstar]]
+modId = "gtceu"
+mandatory = false
+versionRange = "[1.3.0,)"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies.mdstar]]
+modId = "ae2"
+mandatory = false
+versionRange = "[15.0.0,)"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies.mdstar]]
+modId = "jei"
+mandatory = false
+versionRange = "[15.0.0,)"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies.mdstar]]
+modId = "kubejs"
+mandatory = false
+versionRange = "[6,)"
+ordering = "AFTER"
+side = "BOTH"

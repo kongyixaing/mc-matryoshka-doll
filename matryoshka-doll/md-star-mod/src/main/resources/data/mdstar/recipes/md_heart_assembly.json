@@ -1,0 +1,16 @@
+{
+  "type": "mdstar:md_assembly",
+  "ingredients": [
+    { "item": "mdstar:create_essence" },
+    { "item": "mdstar:rails_essence" },
+    { "item": "mdstar:slice_essence" },
+    { "item": "mdstar:cna_essence" },
+    { "item": "mdstar:gregtech_essence" },
+    { "item": "mdstar:ae2_essence" },
+    { "item": "mdstar:ae2_things_essence" },
+    { "item": "mdstar:twilight_essence" }
+  ],
+  "result": { "item": "mdstar:md_heart", "count": 1 },
+  "energy": 100000,
+  "process_time": 4000
+}

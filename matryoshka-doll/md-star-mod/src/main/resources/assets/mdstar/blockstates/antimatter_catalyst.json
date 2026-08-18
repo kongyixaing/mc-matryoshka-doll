@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "formed=false": { "model": "mdstar:block/antimatter_catalyst" },
+    "formed=true":  { "model": "mdstar:block/antimatter_catalyst_on" }
+  }
+}

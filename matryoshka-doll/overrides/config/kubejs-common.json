@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "ignoredRecipeErrors": false,
+  "ignoredScriptErrors": false,
+  "loadErrorMode": "NORMAL",
+  "startupErrorMode": "NORMAL",
+  "clientErrorMode": "NORMAL",
+  "serverErrorMode": "NORMAL",
+  "devMode": false
+}

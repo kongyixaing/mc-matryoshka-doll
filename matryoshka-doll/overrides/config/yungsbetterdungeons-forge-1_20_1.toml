@@ -1,0 +1,18 @@
+#YUNG's Better Dungeons - 让地下城更频繁、更有挑战
+["Better Dungeons"]
+	#是否允许蜘蛛巢穴
+	Enable SpiderNest = true
+	#是否允许小型地下城
+	Enable SmallDungeon = true
+	#是否允许雪屋
+	Enable SnowTemple = true
+	#是否允许大型地下城
+	Enable LargeDungeon = true
+	#是否允许火山口火山
+	Enable Volcano = true
+	#大型地下城最小生成距离（区块）
+	# Range: 1-512
+	LargeDungeonMinDistance = 30
+	#大型地下城最大生成距离（区块）
+	# Range: 1-512
+	LargeDungeonMaxDistance = 80

@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "formed=false": { "model": "mdstar:block/quantum_entanglement" },
+    "formed=true":  { "model": "mdstar:block/quantum_entanglement_on" }
+  }
+}

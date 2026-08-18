@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "mdstar:steel_casing",
+    "mdstar:titanium_casing_block",
+    "mdstar:stainless_casing",
+    "mdstar:md_assembly_tower",
+    "mdstar:md_fusion_reactor",
+    "mdstar:superconductor_matrix",
+    "mdstar:quantum_entanglement",
+    "mdstar:antimatter_catalyst",
+    "mdstar:dyson_core",
+    "mdstar:geothermal_drill",
+    "mdstar:md_star_synthesis_array"
+  ]
+}

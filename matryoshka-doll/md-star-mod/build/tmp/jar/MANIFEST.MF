@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Specification-Title: mdstar
+Specification-Vendor: MD
+Specification-Version: 1
+Implementation-Title: md-star-mod
+Implementation-Version: 0.1.0-alpha
+Implementation-Vendor: MD
+Implementation-Timestamp: 2026-08-18T14:55:58+0000
+

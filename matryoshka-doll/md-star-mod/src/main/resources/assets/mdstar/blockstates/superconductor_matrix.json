@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "formed=false": { "model": "mdstar:block/superconductor_matrix" },
+    "formed=true":  { "model": "mdstar:block/superconductor_matrix_on" }
+  }
+}

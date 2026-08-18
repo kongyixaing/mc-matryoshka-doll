@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "formed=false": { "model": "mdstar:block/md_assembly_tower" },
+    "formed=true":  { "model": "mdstar:block/md_assembly_tower_on" }
+  }
+}

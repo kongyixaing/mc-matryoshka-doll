@@ -1,0 +1,38 @@
+Java Launcher: /root/.local/share/mise/installs/java/17.0.2/bin/java
+Arguments: '--inJar, /root/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.3.12/forge-1.20.1-47.3.12-injected.jar, --outJar, /root/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.3.12_mapped_official_1.20.1/forge-1.20.1-47.3.12_mapped_official_1.20.1.jar, --logFile, accesstransform.log, --atFile, /workspace/matryoshka-doll/md-star-mod/build/_atJar_4/parent_at.cfg'
+Classpath:
+ - /root/.gradle/caches/forge_gradle/maven_downloader/net/minecraftforge/accesstransformers/8.0.7/accesstransformers-8.0.7-fatjar.jar
+Working directory: /workspace/matryoshka-doll/md-star-mod/build/_atJar_4
+Main class: net.minecraftforge.accesstransformer.TransformerProcessor
+====================================
+2026-08-18 14:50:40,240 main ERROR Could not reconfigure JMX java.lang.NullPointerException: Cannot invoke "jdk.internal.platform.CgroupInfo.getMountPoint()" because "anyController" is null
+	at java.base/jdk.internal.platform.cgroupv2.CgroupV2Subsystem.getInstance(CgroupV2Subsystem.java:81)
+	at java.base/jdk.internal.platform.CgroupSubsystemFactory.create(CgroupSubsystemFactory.java:113)
+	at java.base/jdk.internal.platform.CgroupMetrics.getInstance(CgroupMetrics.java:167)
+	at java.base/jdk.internal.platform.SystemMetrics.instance(SystemMetrics.java:29)
+	at java.base/jdk.internal.platform.Metrics.systemMetrics(Metrics.java:58)
+	at java.base/jdk.internal.platform.Container.metrics(Container.java:43)
+	at jdk.management/com.sun.management.internal.OperatingSystemImpl.<init>(OperatingSystemImpl.java:182)
+	at jdk.management/com.sun.management.internal.PlatformMBeanProviderImpl.getOperatingSystemMXBean(PlatformMBeanProviderImpl.java:280)
+	at jdk.management/com.sun.management.internal.PlatformMBeanProviderImpl$3.nameToMBeanMap(PlatformMBeanProviderImpl.java:199)
+	at java.management/java.lang.management.ManagementFactory.lambda$getPlatformMBeanServer$0(ManagementFactory.java:488)
+	at java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:273)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.HashMap$ValueSpliterator.forEachRemaining(HashMap.java:1779)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at java.management/java.lang.management.ManagementFactory.getPlatformMBeanServer(ManagementFactory.java:489)
+	at org.apache.logging.log4j.core.jmx.Server.reregisterMBeansAfterReconfigure(Server.java:140)
+	at org.apache.logging.log4j.core.LoggerContext.setConfiguration(LoggerContext.java:559)
+	at org.apache.logging.log4j.core.LoggerContext.start(LoggerContext.java:263)
+	at org.apache.logging.log4j.core.impl.Log4jContextFactory.getContext(Log4jContextFactory.java:240)
+	at org.apache.logging.log4j.core.config.Configurator.initialize(Configurator.java:158)
+	at org.apache.logging.log4j.core.config.Configurator.initialize(Configurator.java:131)
+	at org.apache.logging.log4j.core.config.Configurator.initialize(Configurator.java:101)
+	at org.apache.logging.log4j.core.config.Configurator.initialize(Configurator.java:188)
+	at net.minecraftforge.accesstransformer.TransformerProcessor.<clinit>(TransformerProcessor.java:22)
+

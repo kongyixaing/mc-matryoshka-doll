@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "formed=false": { "model": "mdstar:block/steel_casing" },
+    "formed=true":  { "model": "mdstar:block/steel_casing_on" }
+  }
+}

@@ -1,0 +1,29 @@
+#Repurposed Structures 配置 — 让原版建筑变多样、变多
+["General"]
+	# 生成频率倍率（越高越常见）
+	spawnRateMultiplier = 1.5
+	# 是否允许 NPC 村庄有更多变体
+	moreVillages = true
+
+["Villages"]
+	["Villages.Badlands"]
+		badlandsVillageMaxDistance = 32
+		badlandsVillageMinDistance = 8
+	["Villages.Birch Forests"]
+		birchVillagesMaxDistance = 32
+	["Villages.Dark Forests"]
+		darkForestVillagesMaxDistance = 36
+	["Villages.Jungles"]
+		jungleVillagesMaxDistance = 40
+	["Villages.Mountains"]
+		mountainsVillagesMaxDistance = 30
+	["Villages.Swamps"]
+		swampVillagesMaxDistance = 36
+	["Villages.Mountains"]
+		mountainsVillagesMaxDistance = 30
+["Mansions"]
+	jungleMansionsSpawnrate = 30
+	darkForestMansionsMaxDistance = 60
+["Mineshafts"]
+	# 让矿井更复杂
+	enableMineshafts = true

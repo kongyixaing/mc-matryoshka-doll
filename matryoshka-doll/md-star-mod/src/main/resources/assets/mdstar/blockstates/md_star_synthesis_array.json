@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "formed=false": { "model": "mdstar:block/md_star_synthesis_array" },
+    "formed=true":  { "model": "mdstar:block/md_star_synthesis_array_on" }
+  }
+}

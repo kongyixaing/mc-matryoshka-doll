@@ -1,0 +1,28 @@
+# Dungeons Arise! 配置 — 让大型建筑出现频率高，方便前期探索
+# Spawn rates for big structures
+[
+    {
+        "structure": "dungeons_arise:large_dungeon",
+        "weight": 8,
+        "separation": 12,
+        "spacing": 24
+    },
+    {
+        "structure": "dungeons_arise:castle",
+        "weight": 4,
+        "separation": 20,
+        "spacing": 40
+    },
+    {
+        "structure": "dungeons_arise:monastery",
+        "weight": 3,
+        "separation": 20,
+        "spacing": 40
+    },
+    {
+        "structure": "dungeons_arise:temple",
+        "weight": 3,
+        "separation": 16,
+        "spacing": 36
+    }
+]
