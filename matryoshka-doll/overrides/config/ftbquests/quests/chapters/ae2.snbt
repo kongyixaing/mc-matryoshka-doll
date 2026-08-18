@@ -1,0 +1,225 @@
+{
+    default_hide_dependency_lines: false
+    description: "AE2 配方已简化——红石 + 玻璃 + 处理器即可。这是整合包中的\"减负区\"。"
+    filename: "ae2"
+    group: "2000000000000001"
+    icon: { id: "ae2:controller" }
+    id: "3000000000000020"
+    order_index: 5
+    title: "AE2 存储网络（简化配方）"
+    tasks: [
+        {
+            id: "3000000000000021"
+            title: "ME 控制器"
+            x: 0.0d
+            y: 0.0d
+            shape: "hexagon"
+            subtitle: "AE2 存储网络核心"
+            tasks: [
+                {
+                    type: "item"
+                    item: "ae2:controller"
+                    count: 1L
+                }
+            ]
+            rewards: [
+                {
+                    type: "item"
+                    item: "ae2:fluix_dust"
+                    count: 16L
+                }
+            ]
+        }
+        {
+            id: "3000000000000022"
+            title: "存储元件：1k"
+            x: 0.0d
+            y: 2.5d
+            dependencies: ["3000000000000021"]
+            tasks: [
+                {
+                    type: "item"
+                    item: "ae2:1k_cell_component"
+                    count: 1L
+                }
+            ]
+            rewards: [
+                {
+                    type: "item"
+                    item: "ae2:calculation_processor"
+                    count: 4L
+                }
+            ]
+        }
+        {
+            id: "3000000000000023"
+            title: "ME 驱动器"
+            x: 0.0d
+            y: 5.0d
+            dependencies: ["3000000000000022"]
+            tasks: [
+                {
+                    type: "item"
+                    item: "ae2:drive"
+                    count: 1L
+                }
+            ]
+            rewards: [
+                {
+                    type: "item"
+                    item: "ae2:logic_processor"
+                    count: 4L
+                }
+            ]
+        }
+        {
+            id: "3000000000000024"
+            title: "处理器自动化"
+            x: 2.5d
+            y: 5.0d
+            dependencies: ["3000000000000023"]
+            subtitle: "三种处理器是 AE2 核心"
+            tasks: [
+                {
+                    type: "item"
+                    item: "ae2:calculation_processor"
+                    count: 8L
+                }
+            ]
+            rewards: [
+                {
+                    type: "item"
+                    item: "ae2:engineering_processor"
+                    count: 4L
+                }
+            ]
+        }
+        {
+            id: "3000000000000025"
+            title: "ME 终端"
+            x: 0.0d
+            y: 7.5d
+            dependencies: ["3000000000000023"]
+            tasks: [
+                {
+                    type: "item"
+                    item: "ae2:terminal"
+                    count: 1L
+                }
+            ]
+            rewards: [
+                {
+                    type: "item"
+                    item: "ae2:blank_pattern"
+                    count: 8L
+                }
+            ]
+        }
+        {
+            id: "3000000000000026"
+            title: "合成处理器"
+            x: 0.0d
+            y: 10.0d
+            dependencies: ["3000000000000025"]
+            tasks: [
+                {
+                    type: "item"
+                    item: "ae2:molecular_assembler"
+                    count: 1L
+                }
+            ]
+            rewards: [
+                {
+                    type: "item"
+                    item: "ae2:blank_pattern"
+                    count: 16L
+                }
+            ]
+        }
+        {
+            id: "3000000000000027"
+            title: "自动合成网络"
+            x: 0.0d
+            y: 12.5d
+            dependencies: ["3000000000000026", "3000000000000024"]
+            tasks: [
+                {
+                    type: "item"
+                    item: "ae2:pattern_provider"
+                    count: 1L
+                }
+            ]
+            rewards: [
+                {
+                    type: "xp_levels"
+                    xp_levels: 20L
+                }
+            ]
+        }
+        {
+            id: "3000000000000028"
+            title: "量子链接室"
+            x: 2.5d
+            y: 10.0d
+            dependencies: ["3000000000000027"]
+            optional: true
+            subtitle: "跨维度存储前置"
+            tasks: [
+                {
+                    type: "item"
+                    item: "ae2:quantum_link"
+                    count: 1L
+                }
+            ]
+            rewards: [
+                {
+                    type: "item"
+                    item: "ae2:quantum_entangled_singularity"
+                    count: 2L
+                }
+            ]
+        }
+        {
+            id: "3000000000000029"
+            title: "AE2 精华"
+            x: 0.0d
+            y: 15.0d
+            dependencies: ["3000000000000027"]
+            subtitle: "AE2 终末产物精华"
+            tasks: [
+                {
+                    type: "item"
+                    item: "mdstar:ae2_essence"
+                    count: 1L
+                }
+            ]
+            rewards: [
+                {
+                    type: "xp_levels"
+                    xp_levels: 30L
+                }
+            ]
+        }
+        {
+            id: "300000000000002A"
+            title: "AE2 Things 附属探索"
+            x: -2.5d
+            y: 10.0d
+            dependencies: ["3000000000000027"]
+            optional: true
+            subtitle: "AE2 Things 精华"
+            tasks: [
+                {
+                    type: "checkmark"
+                }
+            ]
+            rewards: [
+                {
+                    type: "item"
+                    item: "mdstar:ae2_things_essence"
+                    count: 1L
+                }
+            ]
+        }
+    ]
+}

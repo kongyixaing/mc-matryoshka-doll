@@ -1,0 +1,157 @@
+{
+    title: "批量生产流水线"
+    icon: { id: "create:mechanical_press" }
+    order_index: 3
+    description: "建立自动化流水线，进入工业化阶段"
+    id: "2000000000000020"
+    group: "2000000000000001"
+    filename: "production_line"
+}
+
+{
+    title: "粉碎机流水线"
+    x: 0.0d
+    y: 0.0d
+    shape: "rsquare"
+    subtitle: "建立矿石粉碎流水线"
+    id: "2000000000000021"
+    tasks: [
+        {
+            type: "ftbquests:item"
+            item: "create:crushing_wheel"
+            count: 1L
+        }
+    ]
+    rewards: [
+        { id: "minecraft:cobblestone", count: 64L }
+    ]
+}
+
+{
+    title: "洗矿与筛矿"
+    x: 0.0d
+    y: 2.5d
+    dependencies: ["2000000000000021"]
+    id: "2000000000000022"
+    tasks: [
+        {
+            type: "ftbquests:item"
+            item: "create:spout"
+            count: 1L
+        }
+    ]
+    rewards: [
+        { id: "minecraft:iron_nugget", count: 32L }
+    ]
+}
+
+{
+    title: "熔炼三级流程"
+    x: 0.0d
+    y: 5.0d
+    dependencies: ["2000000000000022"]
+    subtitle: "粉碎 → 洗矿 → 熔炼"
+    id: "2000000000000023"
+    tasks: [
+        {
+            type: "ftbquests:item"
+            item: "minecraft:iron_ingot"
+            count: 32L
+        }
+    ]
+    rewards: [
+        { id: "minecraft:gold_ingot", count: 8L }
+    ]
+}
+
+{
+    title: "机械动力附属：CnA"
+    x: 2.5d
+    y: 5.0d
+    dependencies: ["2000000000000023"]
+    optional: true
+    subtitle: "Create Crafts & Additions 交流发电机"
+    id: "2000000000000024"
+    tasks: [
+        {
+            type: "ftbquests:item"
+            item: "createaddition:alternator"
+            count: 1L
+        }
+    ]
+    rewards: [
+        { id: "createaddition:rolling_mill", count: 1L }
+    ]
+}
+
+{
+    title: "机械动力附属：Slice & Dice"
+    x: -2.5d
+    y: 5.0d
+    dependencies: ["2000000000000023"]
+    optional: true
+    subtitle: "Slice & Dice 食物自动化"
+    id: "2000000000000025"
+    tasks: [
+        {
+            type: "ftbquests:checkmark"
+        }
+    ]
+    rewards: [
+        { id: "minecraft:bread", count: 32L }
+    ]
+}
+
+{
+    title: "自动化合成台"
+    x: 0.0d
+    y: 7.5d
+    dependencies: ["2000000000000023"]
+    id: "2000000000000026"
+    tasks: [
+        {
+            type: "ftbquests:item"
+            item: "create:mechanical_crafter"
+            count: 4L
+        }
+    ]
+    rewards: [
+        { id: "minecraft:chest", count: 8L }
+    ]
+}
+
+{
+    title: "工厂规模：百倍产能"
+    x: 0.0d
+    y: 10.0d
+    dependencies: ["2000000000000026"]
+    subtitle: "你的工厂现在能每分钟处理 100+ 矿石"
+    id: "2000000000000027"
+    tasks: [
+        {
+            type: "ftbquests:item"
+            item: "minecraft:iron_block"
+            count: 16L
+        }
+    ]
+    rewards: [
+        { type: "ftbquests:xp_levels", xp_levels: 20L }
+    ]
+}
+
+{
+    title: "准备进入格雷时代"
+    x: 0.0d
+    y: 12.5d
+    dependencies: ["2000000000000027"]
+    subtitle: "你现在有能力进入魔改格雷科技了"
+    id: "2000000000000028"
+    tasks: [
+        {
+            type: "ftbquests:checkmark"
+        }
+    ]
+    rewards: [
+        { type: "ftbquests:xp", xp: 100L }
+    ]
+}

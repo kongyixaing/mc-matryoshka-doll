@@ -1,0 +1,150 @@
+{
+    id: "1000000000000020"
+    group: "1000000000000001"
+    filename: "create_early"
+    title: "机械动力时代"
+    icon: { id: "create:cogwheel" }
+    order_index: 1
+    default_quest_shape: "rsquare"
+    default_hide_dependency_lines: false
+    description: [
+        "建立机械化生产线",
+        "",
+        "利用机械动力（Create）建立从动力源到自动化加工的完整链路，",
+        "为后续格雷科技与 mdstar 现代机械打下基础。"
+    ]
+    quests: [
+        {
+            id: "1000000000000021"
+            title: "制作齿轮与轴"
+            x: 0.0d
+            y: 0.0d
+            shape: "diamond"
+            tasks: [
+                { type: "item", item: "create:cogwheel", count: 8L }
+                { type: "item", item: "create:shaft", count: 8L }
+            ]
+            rewards: [
+                { type: "item", item: "create:andesite_alloy", count: 16L }
+            ]
+        }
+        {
+            id: "1000000000000022"
+            title: "动力源：水车"
+            x: 0.0d
+            y: 2.5d
+            dependencies: [ "1000000000000021" ]
+            tasks: [
+                { type: "item", item: "create:water_wheel", count: 1L }
+            ]
+            rewards: [
+                { type: "item", item: "create:fluid_pipe", count: 8L }
+            ]
+        }
+        {
+            id: "1000000000000023"
+            title: "动力传输：齿轮箱"
+            x: 2.5d
+            y: 2.5d
+            dependencies: [ "1000000000000021" ]
+            tasks: [
+                { type: "item", item: "create:cogwheel", count: 16L }
+            ]
+            rewards: [
+                { type: "xp", xp: 30 }
+            ]
+        }
+        {
+            id: "1000000000000024"
+            title: "机械压机"
+            x: 0.0d
+            y: 5.0d
+            dependencies: [ "1000000000000022", "1000000000000023" ]
+            tasks: [
+                { type: "item", item: "create:mechanical_press", count: 1L }
+            ]
+            rewards: [
+                { type: "item", item: "create:iron_sheet", count: 8L }
+            ]
+        }
+        {
+            id: "1000000000000025"
+            title: "机械搅拌机"
+            x: 2.5d
+            y: 5.0d
+            dependencies: [ "1000000000000022", "1000000000000023" ]
+            tasks: [
+                { type: "item", item: "create:mechanical_mixer", count: 1L }
+            ]
+            rewards: [
+                { type: "item", item: "create:iron_sheet", count: 8L }
+            ]
+        }
+        {
+            id: "1000000000000026"
+            title: "机械锯木机"
+            x: -2.5d
+            y: 5.0d
+            dependencies: [ "1000000000000022", "1000000000000023" ]
+            tasks: [
+                { type: "item", item: "create:mechanical_saw", count: 1L }
+            ]
+            rewards: [
+                { type: "item", item: "minecraft:oak_planks", count: 32L }
+            ]
+        }
+        {
+            id: "1000000000000027"
+            title: "动力鼓风炉"
+            x: 0.0d
+            y: 7.5d
+            dependencies: [ "1000000000000024" ]
+            tasks: [
+                { type: "item", item: "create:encased_fan", count: 1L }
+            ]
+            rewards: [
+                { type: "item", item: "minecraft:iron_ingot", count: 16L }
+            ]
+        }
+        {
+            id: "1000000000000028"
+            title: "洗矿装置"
+            x: 2.5d
+            y: 7.5d
+            dependencies: [ "1000000000000027" ]
+            tasks: [
+                { type: "item", item: "create:spout", count: 1L }
+            ]
+            rewards: [
+                { type: "xp", xp: 50 }
+            ]
+        }
+        {
+            id: "1000000000000029"
+            title: "机械动力附属探索"
+            x: 0.0d
+            y: 10.0d
+            dependencies: [ "1000000000000027", "1000000000000028" ]
+            tasks: [
+                { type: "item", item: "createaddition:alternator", count: 1L }
+            ]
+            rewards: [
+                { type: "item", item: "createaddition:connector", count: 4L }
+            ]
+        }
+        {
+            id: "100000000000002A"
+            title: "齿轮机械工作台"
+            subtitle: "无需手敲！机械自动化合成"
+            x: 0.0d
+            y: 12.5d
+            dependencies: [ "1000000000000029" ]
+            tasks: [
+                { type: "item", item: "create:mechanical_crafter", count: 1L }
+            ]
+            rewards: [
+                { type: "item", item: "minecraft:crafting_table", count: 4L }
+            ]
+        }
+    ]
+}

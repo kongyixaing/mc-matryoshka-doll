@@ -1,0 +1,183 @@
+{
+    title: "探索套娃世界"
+    icon: { id: "minecraft:map" }
+    order_index: 2
+    description: "探索大型建筑，获取前期资源"
+    id: "2000000000000010"
+    group: "1000000000000001"
+    filename: "exploration"
+}
+
+{
+    title: "探索村庄"
+    x: 0.0d
+    y: 0.0d
+    shape: "hexagon"
+    id: "2000000000000011"
+    tasks: [
+        {
+            type: "ftbquests:structure"
+            structure: "minecraft:village"
+        }
+    ]
+    rewards: [
+        { id: "minecraft:emerald", count: 8L }
+    ]
+}
+
+{
+    title: "深入地下城"
+    x: 0.0d
+    y: 2.5d
+    dependencies: ["2000000000000011"]
+    id: "2000000000000012"
+    tasks: [
+        {
+            type: "ftbquests:structure"
+            structure: "minecraft:mineshaft"
+        }
+    ]
+    rewards: [
+        { id: "minecraft:iron_ingot", count: 16L }
+    ]
+}
+
+{
+    title: "YUNG的更好的地下城"
+    x: 2.5d
+    y: 2.5d
+    dependencies: ["2000000000000011"]
+    description: "找到一个 YUNG 改造的地下城并探索"
+    id: "2000000000000013"
+    tasks: [
+        {
+            type: "ftbquests:checkmark"
+        }
+    ]
+    rewards: [
+        { id: "minecraft:diamond", count: 4L }
+    ]
+}
+
+{
+    title: "Dungeons Arise 大型建筑"
+    x: 0.0d
+    y: 5.0d
+    dependencies: ["2000000000000012", "2000000000000013"]
+    description: "找到一个 Dungeons Arise 添加的大型建筑"
+    id: "2000000000000014"
+    tasks: [
+        {
+            type: "ftbquests:checkmark"
+        }
+    ]
+    rewards: [
+        { id: "minecraft:saddle", count: 1L }
+        { id: "minecraft:diamond_horse_armor", count: 1L }
+    ]
+}
+
+{
+    title: "寻找要塞"
+    x: 2.5d
+    y: 5.0d
+    dependencies: ["2000000000000013"]
+    id: "2000000000000015"
+    tasks: [
+        {
+            type: "ftbquests:structure"
+            structure: "minecraft:stronghold"
+        }
+    ]
+    rewards: [
+        { id: "minecraft:ender_eye", count: 12L }
+    ]
+}
+
+{
+    title: "进入末地"
+    x: 5.0d
+    y: 5.0d
+    dependencies: ["2000000000000015"]
+    id: "2000000000000016"
+    tasks: [
+        {
+            type: "ftbquests:dimension"
+            dimension: "minecraft:the_end"
+        }
+    ]
+    rewards: [
+        { type: "ftbquests:xp_levels", xp_levels: 10L }
+    ]
+}
+
+{
+    title: "末影龙挑战"
+    x: 5.0d
+    y: 7.5d
+    dependencies: ["2000000000000016"]
+    id: "2000000000000017"
+    tasks: [
+        {
+            type: "ftbquests:advancement"
+            advancement: "minecraft:end/kill_dragon"
+        }
+    ]
+    rewards: [
+        { id: "minecraft:elytra", count: 1L }
+        { type: "ftbquests:xp_levels", xp_levels: 30L }
+    ]
+}
+
+{
+    title: "进入下界"
+    x: -2.5d
+    y: 5.0d
+    dependencies: ["2000000000000012"]
+    optional: true
+    id: "2000000000000018"
+    tasks: [
+        {
+            type: "ftbquests:dimension"
+            dimension: "minecraft:the_nether"
+        }
+    ]
+    rewards: [
+        { id: "minecraft:blaze_rod", count: 8L }
+    ]
+}
+
+{
+    title: "下界堡垒"
+    x: -2.5d
+    y: 7.5d
+    dependencies: ["2000000000000018"]
+    id: "2000000000000019"
+    tasks: [
+        {
+            type: "ftbquests:structure"
+            structure: "minecraft:fortress"
+        }
+    ]
+    rewards: [
+        { id: "minecraft:nether_wart", count: 16L }
+    ]
+}
+
+{
+    title: "暮色森林探险"
+    x: 0.0d
+    y: 10.0d
+    dependencies: ["2000000000000017", "2000000000000019"]
+    optional: true
+    description: "进入暮色森林维度"
+    id: "200000000000001A"
+    tasks: [
+        {
+            type: "ftbquests:checkmark"
+        }
+    ]
+    rewards: [
+        { id: "twilightforest:fiery_ingot", count: 4L }
+    ]
+}

@@ -1,0 +1,277 @@
+{
+    id: "4000000000000010"
+    group: "4000000000000001"
+    filename: "md_star"
+    title: "MD 之星 - 最终毕业"
+    icon: { id: "mdstar:md_star" }
+    order_index: 7
+    description: "收集 9 种精华（来自所有 mod），合成 MD 之星——整合包毕业物！"
+    default_quest_shape: "circle"
+    quests: [
+        {
+            id: "4000000000000011"
+            title: "机械动力精华"
+            x: 0.0d
+            y: 0.0d
+            size: 1.5d
+            subtitle: "来自机械动力的精华"
+            tasks: [
+                {
+                    id: "4100000000000001"
+                    type: "item"
+                    item: { id: "mdstar:create_essence", Count: 1b }
+                }
+            ]
+            rewards: [
+                {
+                    id: "4200000000000001"
+                    type: "xp"
+                    xp: 100
+                }
+            ]
+        }
+        {
+            id: "4000000000000012"
+            title: "Rails 精华"
+            x: 2.5d
+            y: 0.0d
+            subtitle: "来自 Steam 'n' Rails 附属"
+            tasks: [
+                {
+                    id: "4100000000000002"
+                    type: "item"
+                    item: { id: "mdstar:rails_essence", Count: 1b }
+                }
+            ]
+            rewards: [
+                {
+                    id: "4200000000000002"
+                    type: "xp"
+                    xp: 100
+                }
+            ]
+        }
+        {
+            id: "4000000000000013"
+            title: "Slice 精华"
+            x: 5.0d
+            y: 0.0d
+            subtitle: "来自 Slice & Dice 附属"
+            tasks: [
+                {
+                    id: "4100000000000003"
+                    type: "item"
+                    item: { id: "mdstar:slice_essence", Count: 1b }
+                }
+            ]
+            rewards: [
+                {
+                    id: "4200000000000003"
+                    type: "xp"
+                    xp: 100
+                }
+            ]
+        }
+        {
+            id: "4000000000000014"
+            title: "CnA 精华"
+            x: -2.5d
+            y: 0.0d
+            subtitle: "来自 Crafts & Additions 附属"
+            tasks: [
+                {
+                    id: "4100000000000004"
+                    type: "item"
+                    item: { id: "mdstar:cna_essence", Count: 1b }
+                }
+            ]
+            rewards: [
+                {
+                    id: "4200000000000004"
+                    type: "xp"
+                    xp: 100
+                }
+            ]
+        }
+        {
+            id: "4000000000000015"
+            title: "格雷精华"
+            x: 0.0d
+            y: 2.5d
+            subtitle: "来自格雷科技"
+            tasks: [
+                {
+                    id: "4100000000000005"
+                    type: "item"
+                    item: { id: "mdstar:gregtech_essence", Count: 1b }
+                }
+            ]
+            rewards: [
+                {
+                    id: "4200000000000005"
+                    type: "xp"
+                    xp: 100
+                }
+            ]
+        }
+        {
+            id: "4000000000000016"
+            title: "AE2 精华"
+            x: 2.5d
+            y: 2.5d
+            subtitle: "来自 AE2"
+            tasks: [
+                {
+                    id: "4100000000000006"
+                    type: "item"
+                    item: { id: "mdstar:ae2_essence", Count: 1b }
+                }
+            ]
+            rewards: [
+                {
+                    id: "4200000000000006"
+                    type: "xp"
+                    xp: 100
+                }
+            ]
+        }
+        {
+            id: "4000000000000017"
+            title: "AE2 Things 精华"
+            x: 5.0d
+            y: 2.5d
+            subtitle: "来自 AE2 Things 附属"
+            tasks: [
+                {
+                    id: "4100000000000007"
+                    type: "item"
+                    item: { id: "mdstar:ae2_things_essence", Count: 1b }
+                }
+            ]
+            rewards: [
+                {
+                    id: "4200000000000007"
+                    type: "xp"
+                    xp: 100
+                }
+            ]
+        }
+        {
+            id: "4000000000000018"
+            title: "暮色精华"
+            x: -2.5d
+            y: 2.5d
+            subtitle: "来自暮色森林"
+            tasks: [
+                {
+                    id: "4100000000000008"
+                    type: "item"
+                    item: { id: "mdstar:twilight_essence", Count: 1b }
+                }
+            ]
+            rewards: [
+                {
+                    id: "4200000000000008"
+                    type: "xp"
+                    xp: 100
+                }
+            ]
+        }
+        {
+            id: "4000000000000019"
+            title: "探索精华"
+            x: 0.0d
+            y: 5.0d
+            subtitle: "来自探索 mod"
+            tasks: [
+                {
+                    id: "4100000000000009"
+                    type: "item"
+                    item: { id: "mdstar:explore_essence", Count: 1b }
+                }
+            ]
+            rewards: [
+                {
+                    id: "4200000000000009"
+                    type: "xp"
+                    xp: 100
+                }
+            ]
+        }
+        {
+            id: "400000000000001A"
+            title: "量子电路 x8"
+            x: 0.0d
+            y: 7.5d
+            dependencies: ["4000000000000011", "4000000000000012", "4000000000000013", "4000000000000014", "4000000000000015", "4000000000000016", "4000000000000017", "4000000000000018", "4000000000000019"]
+            subtitle: "需要全部 9 种精华解锁"
+            tasks: [
+                {
+                    id: "410000000000000A"
+                    type: "item"
+                    item: { id: "mdstar:quantum_circuit", Count: 8b }
+                }
+            ]
+            rewards: [
+                {
+                    id: "420000000000000A"
+                    type: "xp_levels"
+                    xp_levels: 50
+                }
+            ]
+        }
+        {
+            id: "400000000000001B"
+            title: "★ 合成 MD 之星 ★"
+            x: 0.0d
+            y: 10.0d
+            dependencies: ["400000000000001A"]
+            size: 2.0d
+            shape: "star"
+            subtitle: "★ 整合包毕业！★"
+            description: ["恭喜你完成了《Matryoshka Doll（套娃）》整合包！",
+                "你从机械动力起家，建立了流水线，",
+                "征服了魔改格雷科技，建造了现代大型机械多方块，",
+                "最终合成了 MD 之星。",
+                "",
+                "你揭开了所有的套娃——但也许还有更多层在等着你..."]
+            tasks: [
+                {
+                    id: "410000000000000B"
+                    type: "item"
+                    item: { id: "mdstar:md_star", Count: 1b }
+                }
+            ]
+            rewards: [
+                {
+                    id: "420000000000000B"
+                    type: "xp_levels"
+                    xp_levels: 100
+                }
+            ]
+        }
+        {
+            id: "400000000000001C"
+            title: "彩蛋：套娃精神"
+            x: 2.5d
+            y: 10.0d
+            dependencies: ["400000000000001B"]
+            optional: true
+            invisible: true
+            subtitle: "隐藏的奖励"
+            tasks: [
+                {
+                    id: "410000000000000C"
+                    type: "checkmark"
+                }
+            ]
+            rewards: [
+                {
+                    id: "420000000000000C"
+                    type: "command"
+                    command: "/tellraw @a {\"text\":\"玩家完成了套娃整合包！\",\"color\":\"gold\",\"bold\":true}"
+                }
+            ]
+        }
+    ]
+}

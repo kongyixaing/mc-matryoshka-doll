@@ -1,0 +1,30 @@
+{
+    default_quest_shape: ""
+    default_reward_team: false
+    drop_loot_crates: false
+    loot_crate_no_drop: 1.0d
+    disable_jei: false
+    default_hide_dependency_lines: false
+    max_reward_set_uses: 10
+    emergency_items: {
+        item: { id: "minecraft:apple", Count: 16b }
+        cash: 0
+    }
+    emergency_cooldown: 300L
+    file: "Quests"
+    title: "Matryoshka Doll 任务线"
+    subtitle: "层层套娃 - 从机械动力到 MD 之星"
+    description: ["欢迎来到《Matryoshka Doll（套娃）》整合包！",
+        "本整合包以\"层层套娃\"为核心设计理念——每个配方都套着另一层配方。",
+        "",
+        "完成下面的任务来引导你的游戏进程，",
+        "从机械动力起家，最终合成毕业物 MD 之星。"]
+    author: "MD"
+    icon: "minecraft:nether_star"
+    allow_take_quest_blocks: false
+    allow_lock_quest_progression: false
+    progression_mode: "flexible"
+    variable_reward_mode: "ALL"
+    variable_loot_crate_mode: "DISABLED"
+    main_menu_stat: "minecraft:play_one_minute"
+}

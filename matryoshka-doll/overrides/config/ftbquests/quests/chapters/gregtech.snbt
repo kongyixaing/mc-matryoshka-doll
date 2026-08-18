@@ -1,0 +1,225 @@
+{
+    default_hide_dependency_lines: false
+    description: "GT 基础工具已被移除！保留蒸汽时代及之后。所有 GT 机器配方被套娃化。"
+    filename: "gregtech"
+    group: "2000000000000001"
+    icon: { id: "minecraft:blast_furnace" }
+    id: "3000000000000010"
+    order_index: 4
+    title: "魔改格雷科技：蒸汽时代后"
+    tasks: [
+        {
+            id: "3000000000000011"
+            title: "蒸汽锅炉"
+            x: 0.0d
+            y: 0.0d
+            shape: "square"
+            subtitle: "GT 蒸汽时代起点"
+            tasks: [
+                {
+                    type: "item"
+                    item: "gtceu:lp_steam_boiler"
+                    count: 1L
+                }
+            ]
+            rewards: [
+                {
+                    type: "item"
+                    item: "minecraft:coal"
+                    count: 32L
+                }
+            ]
+        }
+        {
+            id: "3000000000000012"
+            title: "蒸汽机"
+            x: 0.0d
+            y: 2.5d
+            dependencies: ["3000000000000011"]
+            tasks: [
+                {
+                    type: "item"
+                    item: "gtceu:steam_turbine"
+                    count: 1L
+                }
+            ]
+            rewards: [
+                {
+                    type: "item"
+                    item: "gtceu:bronze_plate"
+                    count: 4L
+                }
+            ]
+        }
+        {
+            id: "3000000000000013"
+            title: "青铜机器"
+            x: 0.0d
+            y: 5.0d
+            dependencies: ["3000000000000012"]
+            tasks: [
+                {
+                    type: "item"
+                    item: "gtceu:bronze_ingot"
+                    count: 1L
+                }
+            ]
+            rewards: [
+                {
+                    type: "item"
+                    item: "gtceu:bronze_ingot"
+                    count: 16L
+                }
+            ]
+        }
+        {
+            id: "3000000000000014"
+            title: "LV 机器外壳"
+            x: 2.5d
+            y: 5.0d
+            dependencies: ["3000000000000013"]
+            subtitle: "低压时代"
+            tasks: [
+                {
+                    type: "item"
+                    item: "gtceu:lv_machine_hull"
+                    count: 1L
+                }
+            ]
+            rewards: [
+                {
+                    type: "item"
+                    item: "gtceu:lv_wire"
+                    count: 8L
+                }
+            ]
+        }
+        {
+            id: "3000000000000015"
+            title: "电力冶金炉"
+            x: 2.5d
+            y: 7.5d
+            dependencies: ["3000000000000014"]
+            tasks: [
+                {
+                    type: "item"
+                    item: "gtceu:lv_alloy_smelter"
+                    count: 1L
+                }
+            ]
+            rewards: [
+                {
+                    type: "item"
+                    item: "gtceu:steel_ingot"
+                    count: 16L
+                }
+            ]
+        }
+        {
+            id: "3000000000000016"
+            title: "MV 机器外壳"
+            x: 5.0d
+            y: 7.5d
+            dependencies: ["3000000000000015"]
+            subtitle: "中压时代"
+            tasks: [
+                {
+                    type: "item"
+                    item: "gtceu:mv_machine_hull"
+                    count: 1L
+                }
+            ]
+            rewards: [
+                {
+                    type: "item"
+                    item: "gtceu:steel_plate"
+                    count: 8L
+                }
+            ]
+        }
+        {
+            id: "3000000000000017"
+            title: "HV 机器外壳"
+            x: 7.5d
+            y: 7.5d
+            dependencies: ["3000000000000016"]
+            subtitle: "高压时代"
+            tasks: [
+                {
+                    type: "item"
+                    item: "gtceu:hv_machine_hull"
+                    count: 1L
+                }
+            ]
+            rewards: [
+                {
+                    type: "item"
+                    item: "gtceu:aluminium_plate"
+                    count: 8L
+                }
+            ]
+        }
+        {
+            id: "3000000000000018"
+            title: "格雷精华"
+            x: 0.0d
+            y: 10.0d
+            dependencies: ["3000000000000017"]
+            subtitle: "GT 终末产物精华 - 用于毕业"
+            tasks: [
+                {
+                    type: "item"
+                    item: "mdstar:gregtech_essence"
+                    count: 1L
+                }
+            ]
+            rewards: [
+                {
+                    type: "xp_levels"
+                    xp_levels: 30L
+                }
+            ]
+        }
+        {
+            id: "3000000000000019"
+            title: "格雷科技附属探索"
+            x: -2.5d
+            y: 7.5d
+            dependencies: ["3000000000000014"]
+            optional: true
+            subtitle: "探索 GT 的其他机器"
+            tasks: [
+                {
+                    type: "checkmark"
+                }
+            ]
+            rewards: [
+                {
+                    type: "xp_levels"
+                    xp_levels: 10L
+                }
+            ]
+        }
+        {
+            id: "300000000000001A"
+            title: "超导材料研究"
+            x: 0.0d
+            y: 12.5d
+            dependencies: ["3000000000000018"]
+            tasks: [
+                {
+                    type: "item"
+                    item: "gtceu:annealed_copper_plate"
+                    count: 8L
+                }
+            ]
+            rewards: [
+                {
+                    type: "item"
+                    item: "gtceu:annealed_copper_wire"
+                    count: 16L
+                }
+            ]
+        }
+    ]
+}

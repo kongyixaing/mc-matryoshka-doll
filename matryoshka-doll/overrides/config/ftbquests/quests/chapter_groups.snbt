@@ -1,0 +1,24 @@
+{
+    chapter_groups: [
+        {
+            id: "1000000000000001"
+            title: "前期 - 起家与探索"
+            default_hide_dependency_lines: false
+        }
+        {
+            id: "2000000000000001"
+            title: "中期 - 工业化"
+            default_hide_dependency_lines: false
+        }
+        {
+            id: "3000000000000001"
+            title: "后期 - 现代机械"
+            default_hide_dependency_lines: false
+        }
+        {
+            id: "4000000000000001"
+            title: "毕业 - MD 之星"
+            default_hide_dependency_lines: false
+        }
+    ]
+}

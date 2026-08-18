@@ -1,0 +1,119 @@
+{
+    id: "1000000000000010"
+    group: "1000000000000001"
+    filename: "welcome"
+    title: "欢迎来到套娃世界"
+    icon: { id: "minecraft:chest" }
+    order_index: 0
+    default_quest_shape: "rsquare"
+    default_hide_dependency_lines: false
+    description: [
+        "欢迎来到《套娃 Matryoshka Doll》整合包！",
+        "",
+        "本整合包采用层层递进的套娃式配方设计：",
+        "§a前期：§r机械动力（Create）+ 25 个附属",
+        "§b中期：§r魔改格雷科技（GregTech CEu Modern，删除基础工具，保留蒸汽时代后）",
+        "§d后期：§r自制 mod mdstar 的大型现代机械多方块结构",
+        "§6毕业：§r合成 MD 之星",
+        "",
+        "AE2 配方被简化，其他 mod 配方套娃化。",
+        "完成下方任务领取新手礼包，开启你的套娃之旅！"
+    ]
+    quests: [
+        {
+            id: "1000000000000011"
+            title: "启动整合包"
+            x: 0.0d
+            y: 0.0d
+            shape: "rsquare"
+            tasks: [
+                {
+                    type: "checkmark"
+                }
+            ]
+            rewards: [
+                { type: "item", item: "minecraft:stone_pickaxe", count: 1L }
+                { type: "item", item: "minecraft:bread", count: 16L }
+            ]
+        }
+        {
+            id: "1000000000000012"
+            title: "获得木头"
+            x: 0.0d
+            y: 2.5d
+            dependencies: [ "1000000000000011" ]
+            tasks: [
+                { type: "item", item: "minecraft:oak_log", count: 8L }
+            ]
+            rewards: [
+                { type: "item", item: "minecraft:stick", count: 16L }
+            ]
+        }
+        {
+            id: "1000000000000013"
+            title: "制作工作台"
+            x: 0.0d
+            y: 5.0d
+            dependencies: [ "1000000000000012" ]
+            tasks: [
+                { type: "item", item: "minecraft:crafting_table", count: 1L }
+            ]
+            rewards: [
+                { type: "xp", xp: 20 }
+            ]
+        }
+        {
+            id: "1000000000000014"
+            title: "寻找安山岩"
+            x: 2.5d
+            y: 5.0d
+            dependencies: [ "1000000000000012" ]
+            tasks: [
+                { type: "item", item: "minecraft:andesite", count: 32L }
+            ]
+            rewards: [
+                { type: "xp", xp: 20 }
+            ]
+        }
+        {
+            id: "1000000000000015"
+            title: "机械动力入门"
+            x: 0.0d
+            y: 7.5d
+            dependencies: [ "1000000000000013", "1000000000000014" ]
+            tasks: [
+                { type: "item", item: "create:cogwheel", count: 4L }
+            ]
+            rewards: [
+                { type: "item", item: "create:shaft", count: 4L }
+            ]
+        }
+        {
+            id: "1000000000000016"
+            title: "探索周边"
+            x: -2.5d
+            y: 5.0d
+            dependencies: [ "1000000000000011" ]
+            optional: true
+            tasks: [
+                { type: "structure", structure: "minecraft:village" }
+            ]
+            rewards: [
+                { type: "xp_levels", xp_levels: 3 }
+            ]
+        }
+        {
+            id: "1000000000000017"
+            title: "获得煤炭"
+            x: 2.5d
+            y: 7.5d
+            dependencies: [ "1000000000000014" ]
+            tasks: [
+                { type: "item", item: "minecraft:coal", count: 16L }
+            ]
+            rewards: [
+                { type: "item", item: "minecraft:torch", count: 32L }
+            ]
+        }
+    ]
+}
