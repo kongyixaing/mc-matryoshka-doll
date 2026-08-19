@@ -11,7 +11,7 @@
   "manifestType": "minecraftModpack",
   "manifestVersion": 1,
   "name": "Matryoshka Doll (套娃)",
-  "version": "0.3.2-beta",
+  "version": "0.4.0-beta",
   "author": "MD",
   "overrides": "overrides",
   "files": [
@@ -42,7 +42,7 @@
     },
     {
       "projectID": 328085,
-      "fileID": 4835191,
+      "fileID": 5797605,
       "required": true
     },
     {
@@ -53,6 +53,11 @@
     {
       "projectID": 890405,
       "fileID": 7917773,
+      "required": true
+    },
+    {
+      "projectID": 626676,
+      "fileID": 5775541,
       "required": true
     },
     {
@@ -82,7 +87,7 @@
       {
         "name": "Jade (formerly WAILA)",
         "projectID": 322724,
-        "note": "方块信息显示",
+        "note": "方块信息显示（GTCEu 推荐依赖）",
         "download_url": "https://www.curseforge.com/minecraft/mc-mods/jade"
       },
       {
@@ -94,13 +99,13 @@
       {
         "name": "Embeddium",
         "projectID": 465251,
-        "note": "渲染性能优化",
+        "note": "渲染性能优化（GTCEu 推荐依赖）",
         "download_url": "https://www.curseforge.com/minecraft/mc-mods/embeddium"
       },
       {
         "name": "Oculus",
         "projectID": 714215,
-        "note": "Shader 支持",
+        "note": "Shader 支持（与 Embeddium 配合）",
         "download_url": "https://www.curseforge.com/minecraft/mc-mods/oculus"
       },
       {
