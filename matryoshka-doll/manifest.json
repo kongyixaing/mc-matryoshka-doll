@@ -11,7 +11,7 @@
   "manifestType": "minecraftModpack",
   "manifestVersion": 1,
   "name": "Matryoshka Doll (套娃)",
-  "version": "0.4.1-beta",
+  "version": "0.5.0-beta",
   "author": "MD",
   "overrides": "overrides",
   "files": [
@@ -67,17 +67,22 @@
     },
     {
       "projectID": 289412,
-      "fileID": 5045167,
+      "fileID": 8078538,
       "required": true
     },
     {
       "projectID": 404465,
-      "fileID": 5874882,
+      "fileID": 5051953,
       "required": true
     },
     {
       "projectID": 404468,
       "fileID": 4623116,
+      "required": true
+    },
+    {
+      "projectID": 889915,
+      "fileID": 6402486,
       "required": true
     }
   ],
