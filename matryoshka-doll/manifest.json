@@ -11,7 +11,7 @@
   "manifestType": "minecraftModpack",
   "manifestVersion": 1,
   "name": "Matryoshka Doll (套娃)",
-  "version": "0.3.0-beta",
+  "version": "0.3.1-beta",
   "author": "MD",
   "overrides": "overrides",
   "files": [
@@ -27,7 +27,7 @@
     },
     {
       "projectID": 419699,
-      "fileID": 4581905,
+      "fileID": 4663010,
       "required": true
     },
     {
@@ -64,23 +64,21 @@
       "projectID": 289412,
       "fileID": 5045167,
       "required": true
+    },
+    {
+      "projectID": 404465,
+      "fileID": 8226927,
+      "required": true
+    },
+    {
+      "projectID": 404468,
+      "fileID": 4623116,
+      "required": true
     }
   ],
   "_manual_download_required": {
     "说明": "以下模组需要从 CurseForge 或 Modrinth 手动下载，放入 PCL2 安装后的实例 mods 文件夹中",
     "mods": [
-      {
-        "name": "FTB Library",
-        "projectID": 233025,
-        "note": "FTB 工具库，FTB Quests 必需依赖",
-        "download_url": "https://www.curseforge.com/minecraft/mc-mods/ftb-library"
-      },
-      {
-        "name": "FTB Teams",
-        "projectID": 299585,
-        "note": "FTB 团队支持，FTB Quests 可选依赖",
-        "download_url": "https://www.curseforge.com/minecraft/mc-mods/ftb-teams"
-      },
       {
         "name": "Jade (formerly WAILA)",
         "projectID": 322724,
